@@ -6,9 +6,7 @@ int n_times(int n){
     if(n==1){
         return 0;
     }
-    else{
-        n_times(n-1);
-    }
+    n_times(n-1);
     return 0;
 }
 int main(){

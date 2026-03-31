@@ -1,21 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int func(int n){
-    int increment{1};
-    if(n==1){
+int ton(int n,int count){
+    if(count==n){
         return 0;
     }
-    else{
-        cout<<increment;
-        increment++;
-        func(n-1);
-    }
-    return 0;
+    cout<<count<<"\n";
+    ton(count+1,);
+    return 0;    
 }
 
 int main(){
-    int n;
+    int n,count{1};
     cin >> n;
-    int func(n);
+    int ton(n,count);
 }
