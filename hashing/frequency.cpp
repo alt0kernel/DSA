@@ -1,20 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void frequency(int arr[],int n){
+    unordered_map<int,int> map;
+
+    for(int i=0;i<n;i++){
+        map[arr[i]]++;
+    }
+    for(auto x:map){
+        cout<<x.first<<" "<<x.second<<endl;
+    }
+}
+
 int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    int hash[n+1]={0};
-    for(int i=0;i<n;i++){
-        hash[arr[i]]+=1;
-    }
-    while(n--){
-        int num;
-        cin>>num;
-        cout<<hash[num]<<"\n";
-    }
+    int arr[] = {10,5,3,10,8,5,9,6};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    frequency(arr,n);
+    return 0;
 }
